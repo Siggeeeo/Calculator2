@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator2.MainPage"
+
+   <VerticalStackLayout Spacing="10" Padding="10">
+    <Label x:Name="DisplayLabel" 
+               FontSize="40"
+               HorizontalOptions="End"
+               VerticalOptions="Center"
+               Text="0"/>
+       <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*" 
+             RowSpacing="5" ColumnSpacing="5">
+
+        <Button Text="C" Grid.Row="0" Grid.Column="0"BackgroundColor="LightGray" Clicked="Onbuttonclicked"/>
+        <Button Text="±" Grid.Row="0" Grid.Column="1" BackgroundColor="LightBlue" Clicked="OnButtonClicked"/>
+        <Button Text="%" Grid.Row="0" Grid.Column="2" BackgroundColor="LightBlue" Clicked="OnButtonClicked"/>
+        <Button Text="÷" Grid.Row="0" Grid.Column="3" BackgroundColor="Green" Clicked="OnButtonClicked"/>
+    
